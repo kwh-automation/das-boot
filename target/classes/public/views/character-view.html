@@ -1,0 +1,90 @@
+<div class="container pad-top">
+    <h3>{{character.name}}'s Basic Info</h3>
+    <table class="table charactertable">
+            <td>Name</td>
+            <td>{{character.name}}</td>
+        </tr>
+        <tr>
+            <td>Race</td>
+            <td>{{character.race}}</td>
+        </tr>
+        <tr>
+            <td>Class Type</td>
+            <td>{{character.characterClassType}}</td>
+        </tr>
+        <tr>
+            <td>Character Level</td>
+            <td>{{character.level}}</td>
+        </tr>
+        <tr>
+            <td>Deity</td>
+            <td>{{character.deity}}</td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>{{character.gender}}</td>
+        </tr>
+        <tr>
+            <td>Home World</td>
+            <td>{{character.homeWorld}}</td>
+        </tr>
+        <tr>
+            <td>Alignment</td>
+            <td>{{character.alignment}}</td>
+        </tr>
+        <tr>
+            <td>Size</td>
+            <td>{{character.size}}</td>
+        </tr>
+        <tr>
+            <td>Speed</td>
+            <td>{{character.speed}}</td>
+        </tr>
+        <tr>
+            <td>Notes</td>
+            <td>{{character.notes}}</td>
+        </tr>
+    </table>
+
+    <h3>Ability Scores</h3>
+    <table class="table character-ability-score-table">
+        <tr>
+            <th>strength</th>
+            <th>dexterity</th>
+            <th>constitution</th>
+            <th>intelligence</th>
+            <th>wisdom</th>
+            <th>charisma</th>
+        </tr>
+        <tr>
+            <td>{{character.strength}}</td>
+            <td>{{character.dexterity}}</td>
+            <td>{{character.constitution}}</td>
+            <td>{{character.intelligence}}</td>
+            <td>{{character.wisdom}}</td>
+            <td>{{character.charisma}}</td>
+        </tr>
+    </table>
+
+    <table class="table character-skills-table">
+        <tr>
+            <th>Acrobatics</th>
+            <th>Athletics</th>
+            <th>Bluff</th>
+            <th>Computers</th>
+            <th>Medicine</th>
+            <th>Stealth</th>
+        </tr>
+        <tr>
+            <td>{{character.acrobatics}}</td>
+            <td>{{character.athletics}}</td>
+            <td>{{character.bluff}}</td>
+            <td>{{character.computers}}</td>
+            <td>{{character.medicine}}</td>
+            <td>{{character.stealth}}</td>
+        </tr>
+    </table>
+    <div>
+        <a class="btn btn-primary" ui-sref="editCharacter({id:character.id})">Edit</a>
+    </div>
+</div>
