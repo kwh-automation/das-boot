@@ -8,6 +8,4 @@ angular.module('app.services', []).factory('Character', function($resource) {
     this.showPopup=function(message){
         return $window.confirm(message);
     }
-}).service('diceRollService', function(min, max) {
-    return Math.random() * (max - min) + min;
 });

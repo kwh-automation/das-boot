@@ -35,7 +35,7 @@ public class CharacterController {
     @RequestMapping(value = "characters/{id}", method = RequestMethod.PUT)
     public Character update(@PathVariable Long id, @RequestBody Character character) {
         Optional<Character> existingCharacter = characterRepository.findById(id);
-        BeanUtils.copyProperties(character, existingCharacter);
+        BeanUtils.copyProperties(character, existingCharacter.get());
         return characterRepository.saveAndFlush(existingCharacter.get());
     }
 
